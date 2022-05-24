@@ -8,17 +8,17 @@
   </div>
 
    <div style="max-width: 60%">
-      <p class="p-info">Esta pipe hace que un texto imprimido mediante una iterpolación se transforme en un texto organizado, poniendo la primera letra de un string en mayúscula<br>
-        El archivo pipe creado se importa en las declaraciones del módulo donde se quiera utilizar.
+      <p class="p-info">Esta pipe hace que un texto imprimido mediante una iterpolación se transforme en un texto organizado, poniendo la primera letra de un string en mayúscula y las demás letras en minúsculas. <br><br>
+        * El archivo pipe creado se importa en las declaraciones del módulo donde se quiera utilizar.
       </p>
   </div>
 
   <div style="max-width: 60%">
 
-    <input placeholder="Escribe un texto aquí" style="width:300px">
+    <input placeholder="Escribe un texto aquí" style="width:300px;height:30px;" [(ngModel)]="transformText">
   </div>
 
   <div>
-    <span>{{ transformText | upperCapital }}</span>
+    <span class="p-info"> <strong>Resultado: </strong> &nbsp; {{ transformText | upperCapital }}</span>
   </div>
 </div>
