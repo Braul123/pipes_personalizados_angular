@@ -1,0 +1,24 @@
+
+<div class="body">
+   <h1>Pipe personalizado</h1>
+   <div style="max-width: 60%">
+      <p class="p-info">Creando una pipe personalizada con angular, esta pipe sirve para modificar informacion del DOM sin tener que repetir la misma funcion una y otra vez.<br>
+        <strong>Sintaxis: interpolación - {{ data | pipePersonalizada </strong>
+      </p>
+  </div>
+
+   <div style="max-width: 60%">
+      <p class="p-info">Esta pipe hace que un texto imprimido mediante una iterpolación se transforme en un texto organizado, poniendo la primera letra de un string en mayúscula<br>
+        El archivo pipe creado se importa en las declaraciones del módulo donde se quiera utilizar.
+      </p>
+  </div>
+
+  <div style="max-width: 60%">
+
+    <input placeholder="Escribe un texto aquí" style="width:300px">
+  </div>
+
+  <div>
+    <span>{{ transformText | upperCapital }}</span>
+  </div>
+</div>
